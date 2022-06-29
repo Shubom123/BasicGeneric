@@ -15,9 +15,12 @@ public class GenericsMain <T extends Comparable<T>> {
                 inputArray[i+1] = inputArray[i];
             }
         }
-        System.out.println(inputArray[inputArray.length - 1]);
+
     }
 
+    public void toPrint(){
+        System.out.println(inputArray[inputArray.length - 1]);
+    }
     public void toSort(){
 
         for(int i=0; i<inputArray.length;i++){
@@ -40,9 +43,9 @@ public class GenericsMain <T extends Comparable<T>> {
         new GenericsMain(S).toSort();
         new GenericsMain(F).toSort();
         System.out.println("*******Finding Maximum*******");
-        new GenericsMain(I).largest();
-        new GenericsMain(S).largest();
-        new GenericsMain(F).largest();
+        new GenericsMain(I).toPrint();
+        new GenericsMain(S).toPrint();
+        new GenericsMain(F).toPrint();
     }
 
 }
